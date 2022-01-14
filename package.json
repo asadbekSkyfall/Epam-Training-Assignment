@@ -1,7 +1,7 @@
 {
   "name": "epam",
   "version": "1.0.0",
-  "description": "",
+  "description": "epam practise",
   "main": "epam.js",
   "scripts": {
     "test": "answers"
