@@ -209,9 +209,84 @@ console.log(getStringsLength(['a','ab','abc']));
 
 //8
 const insertItem = (arr_7,item,index) => {
-     
+    let ar_3 = arr_7.slice(index,item);
+    return ar_3; 
 }
 console.log(insertItem([1,2,3,4,5],2,1))
 
 //9
+
+const toArrayOfSquares = (arr) => {
+    let ar_4 = [];
+    for(let i of arr) {
+        let result = i * i;
+        ar_4.push(result);
+    }
+    return ar_4;
+}
+console.log(toArrayOfSquares([ 0, 1, 2, 3, 4, 5 ]))
+
+//10
+
+const getMovingSum = (arr) => {
+    let ar_5 = [];
+    let sum = 0;
+    for(let n of arr) {
+        sum+=n;
+        ar_5.push(sum);
+    }
+    return ar_5;
+}
+
+console.log(getMovingSum([1,1,1,1,1]))
+
+//11
+
+const getSecondItems = (arr) => {
+    let ar_6 = [];
+    for(let n=0; n<arr.length; n++) {
+        if((n % 2)) ar_6.push(arr[n])
+    }
+    return ar_6;
+}
+console.log(getSecondItems([ 'a', 'b', 'c' , null ]))
+
+//12
+
+const get3TopItems = (arr) => {
+for(let n of arr) {
+    if(n>0) return n 
+    else 0
+}    
+}
+console.log(get3TopItems([null, 1, 'elephant']))
+
+//13
+const getItemsSum = (arr) => {
+return arr.reduce((result,item) => result + item)
+
+}
+console.log(getItemsSum([1,2,3,4]));
+
+//14
+const friend = (arr) => {
+	let ar_7 = [];
+	for(let n of arr) {
+		if(n.length === 4) ar_7.push(n)
+	}
+	return ar_7;
+}
+console.log(friend(['asad','alibek','latif','sama']))
+
+//15
+const getFalsyValuesCount = (arr) => {
+    let ar_8 = []
+    for(let i of arr) {
+        if(i == false || i == NaN || i == null) ar_8.push(i);
+    }
+    return ar_8.length;
+    
+}
+console.log(getFalsyValuesCount([ null, undefined, NaN, false, 0, '' ]))
+
 
