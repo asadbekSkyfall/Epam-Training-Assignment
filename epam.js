@@ -207,7 +207,7 @@ const getStringsLength = (arr_6) => {
 }
 console.log(getStringsLength(['a','ab','abc']));
 
-8
+//8
 const insertItem = (arr_7,item,index) => {
      
 }
